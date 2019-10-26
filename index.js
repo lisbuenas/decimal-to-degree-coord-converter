@@ -23,7 +23,7 @@ exports.writeFile = function(){
 
 // dms format
 exports.convertLatLong = function(lat, lng){
-
+return 'asas'
 }
 
 // degrees, mins, secs to decimal degrees ######################################
