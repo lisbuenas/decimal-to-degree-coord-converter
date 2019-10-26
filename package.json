@@ -1,0 +1,18 @@
+{
+  "name": "converte-posicao-to-latlng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"nodemon npm index.js",
+    "test": "jest --watchAll"
+  },
+  "author": "Felipe Lisboa",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
