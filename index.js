@@ -18,7 +18,10 @@ exports.readFile = function(){
 }
 
 exports.writeFile = function(){
-
+    fs.appendFile('output.txt', 'Hello content!\n', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
 }
 
 // dms format
@@ -37,3 +40,4 @@ exports.exports = function dms_to_d(d,m,s,dir)
 }
 
 this.readFile();
+this.writeFile();
