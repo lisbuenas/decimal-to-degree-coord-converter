@@ -1,5 +1,4 @@
 var fs = require('fs');
-
 exports.convert = function () {
     console.log('ASHASU')
     return "ASHASU";
@@ -7,20 +6,22 @@ exports.convert = function () {
 
 exports.readFile = function(){
     try {
-        var data = fs.readFileSync('file.txt').toString().split("\n");
-        /*for(i in data) {
-            console.log(data[i]);
-        }*/
+        var data = fs.readFileSync('posicoes.csv').toString().split("\n");
+        for(i in data) {
+         // console.log(data[i]);
+            this.writeFile(data[i]);
+        }
+        console.log('Done')
         return data;
     } catch(e) {
         console.log('Error:', e.stack);
     }
 }
 
-exports.writeFile = function(){
-    fs.appendFile('output.txt', 'Hello content!\n', function (err) {
+exports.writeFile = function(data){
+    fs.appendFile('output.txt', `${data}\n`, function (err) {
         if (err) throw err;
-        console.log('Saved!');
+        //console.log('Saved!');
       });
 }
 
@@ -40,4 +41,4 @@ exports.exports = function dms_to_d(d,m,s,dir)
 }
 
 this.readFile();
-this.writeFile();
+
