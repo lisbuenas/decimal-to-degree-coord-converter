@@ -5,7 +5,11 @@ The main purpose of this simple project is to convert a DMS to D coordinate syst
 I had used to map an CSV input file to enable the output to a Output file
 
 ## Running the file
+
 index -- input fileInput.csv --output fileName.csv
 
 ## tests
+
+The base of tests were created with Jest Library and you can run it with
+
 yarn test
