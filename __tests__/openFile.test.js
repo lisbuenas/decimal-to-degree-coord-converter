@@ -2,11 +2,21 @@ const convert = require('../index');
 
 describe('Open file', () => {
     it('should open file', () => {
-        // pending();
         let test = convert.readFile();
 
         expect(test.length).toBeGreaterThan(0);
     });
 
+    it('Should get line data', () => {
+        pending();
+    });
+
+    it('Should extract dms to convert', () => {
+        pending();
+    });
+
+    it('Should store converted data', () => {
+        pending();
+    });
 });
 
