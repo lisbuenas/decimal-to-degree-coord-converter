@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "output"
+    ]
+  },
   "scripts": {
     "start": "nodemon npm index.js",
-    "test": "jest --watchAll"
+    "test": "jest --watch"
   },
   "author": "Felipe Lisboa",
   "license": "ISC",
